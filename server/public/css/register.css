@@ -1,0 +1,51 @@
+.border-md {
+    border-width: 2px;
+}
+
+.btn-facebook {
+    background: #405D9D;
+    border: none;
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus {
+    background: #314879;
+}
+
+.btn-twitter {
+    background: #42AEEC;
+    border: none;
+}
+
+.btn-twitter:hover,
+.btn-twitter:focus {
+    background: #1799e4;
+}
+
+
+.donthaveakun {
+    margin-top: 2.2%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.form-control:not(select) {
+    padding: 1.5rem 0.5rem;
+}
+
+select.form-control {
+    height: 52px;
+    padding-left: 0.5rem;
+}
+
+.form-control::placeholder {
+    /* font-weight: bold; */
+    font-size: 1em;
+    color: #999;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}

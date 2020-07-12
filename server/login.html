@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!--My CSS-->
+    <link rel="stylesheet" href="/css/login.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .lupa a {
+            margin-top: 2px;
+            font-size: 1em;
+            color: #999;
+            text-decoration: underline;
+            cursor: pointer
+        }
+
+        .lupa a:hover {
+            color: rgb(29, 26, 26);
+            text-decoration: none;
+        }
+    </style>
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- Navbar-->
+    <!-- <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <div class="container">
+                <!-- Navbar Brand -->
+    <!-- <a href="#" class="navbar-brand">
+                    <img src="logo.png" alt="logo" width="150">
+                </a>
+            </div>
+        </nav>
+    </header>  -->
+    <div class="container">
+        <div class="row py-5 mt-4 align-items-center">
+            <!-- For Demo Purpose -->
+            <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+                <img src="/images/imagephone.png" alt="" class="img-fluid mb-3 d-none d-md-block">
+                <p class="font-italic text-muted mb-3 d-none d-md-block">Satu langkah menuju pembayaran pajak secara
+                    online yang mudah, cepat dan aman.</p>
+
+            </div>
+
+            <!-- Registeration Form -->
+            <div class="col-md-7 col-lg-6 ml-auto">
+                <form action="#">
+                    <div class="row">
+
+                        <div class="input-group col-lg-12 mb-4">
+                            <h2>Masuk ke Akun Anda</h2>
+                        </div>
+
+                        <!-- Email Address -->
+                        <div class="input-group col-lg-12 mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-envelope text-muted"></i>
+                                </span>
+                            </div>
+                            <input id="email" type="email" name="email" placeholder="Email Address"
+                                class="form-control bg-white border-left-0 border-md">
+                        </div>
+                        <div class="input-group col-lg-12 mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-lock text-muted"></i>
+                                </span>
+                            </div>
+                            <input id="password" type="password" name="password" placeholder="Password"
+                                class="form-control bg-white border-left-0 border-md">
+                        </div>
+                        <div class="input-group col-lg-12 mb-4 justify-content-end lupa">
+                            <a href="#">Lupa password?</a>
+                        </div>
+
+                        <!-- Phone Number -->
+
+
+
+                        <!-- Job -->
+
+
+                        <!-- Password -->
+
+                        <!-- Submit Button -->
+                        <div class="form-group col-lg-12 mx-auto mb-0">
+                            <a href="/" class="btn btn-primary btn-block py-2 tombollogin">
+                                <span class="font-weight-bold">Masuk</span>
+                            </a>
+                        </div>
+
+                        <!-- Divider Text -->
+
+
+                        <!-- Already Registered -->
+                        <div class="text-center w-100">
+                            <p class="text-muted font-weight-bold donthaveakun">Belum memiliki akun? <a href="register"
+                                    class="text-primary ml-2 daftar">Daftar disini</a></p>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script>
+        // For Demo Purpose [Changing input group text on focus]
+        $(function () {
+            $('input, select').on('focus', function () {
+                $(this).parent().find('.input-group-text').css('border-color', '#80bdff');
+            });
+            $('input, select').on('blur', function () {
+                $(this).parent().find('.input-group-text').css('border-color', '#ced4da');
+            });
+        });
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $('.tombollogin').click(function(){
+            //     $('.tombollogin').attr('href',"register")
+            // });
+            const socket = io();
+            $(window).on('beforeunload', function () {
+                socket.close();
+            });
+        });
+    </script>
+</body>
+
+</html>
